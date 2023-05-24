@@ -1,5 +1,5 @@
 const sequelize = require("../connection");
-const Department = require("../Models/department");
+const Department = require("../models/departments");
 
 const departmentsSeedData = require("./departmentsSeedData.json");
 

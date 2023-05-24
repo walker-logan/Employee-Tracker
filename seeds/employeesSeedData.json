@@ -1,0 +1,50 @@
+[
+  {
+    "first_name": "Isaac",
+    "last_name": "Nelson",
+    "role_id": 3,
+    "manager_id": null
+  },
+  {
+    "first_name": "Jack",
+    "last_name": "Carter",
+    "role_id": 4,
+    "manager_id": 3
+  },
+  {
+    "first_name": "Katherine",
+    "last_name": "Moore",
+    "role_id": 5,
+    "manager_id": null
+  },
+  {
+    "first_name": "Liam",
+    "last_name": "Thompson",
+    "role_id": 6,
+    "manager_id": 5
+  },
+  {
+    "first_name": "Molly",
+    "last_name": "Martin",
+    "role_id": 7,
+    "manager_id": null
+  },
+  {
+    "first_name": "Nathan",
+    "last_name": "Harris",
+    "role_id": 8,
+    "manager_id": 7
+  },
+  {
+    "first_name": "Olivia",
+    "last_name": "Clark",
+    "role_id": 9,
+    "manager_id": null
+  },
+  {
+    "first_name": "Peter",
+    "last_name": "Lewis",
+    "role_id": 10,
+    "manager_id": 9
+  }
+]

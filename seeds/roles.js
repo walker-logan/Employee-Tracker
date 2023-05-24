@@ -1,5 +1,5 @@
 const sequelize = require("../connection");
-const Role = require("../Models/role");
+const Role = require("../models/roles");
 
 const rolesSeedData = require("./rolesSeedData.json");
 
