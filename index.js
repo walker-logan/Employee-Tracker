@@ -1,5 +1,5 @@
 // Importing necessary dependencies and models
-const { Department, Role, Employee } = require("./Models");
+const { Department, Role, Employee } = require("./models");
 const sequelize = require("./connection");
 const inquirer = require("inquirer");
 
