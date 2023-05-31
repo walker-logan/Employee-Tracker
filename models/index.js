@@ -1,6 +1,6 @@
-const Department = require("./department.js")
-const Role = require("./role.js");
-const Employee = require("./employee.js");
+const Department = require("./departments.js")
+const Role = require("./roles.js");
+const Employee = require("./employees.js");
 
 Role.belongsTo(Department, {
   foreignKey: "department_id",

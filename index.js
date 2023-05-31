@@ -84,9 +84,12 @@ async function addDepartment() {
 
 // Function to add a new role
 async function addRole() {
-  const departments = await Department.findAll({
+  const dbDepartments = await Department.findAll({
     attributes: [["id", "value"], ["name", "name"]],
   });
+  const departments = dbDepartments.map(department => department.get({plain:true})) 
+  // console.log(departments)
+  // console.log(dbDepartments)
   const role = await inquirer.prompt([
     { type: "input", message: "What is the name of the role?", name: "title" },
     { type: "input", message: "What would you like the salary to be?", name: "salary" },
@@ -98,8 +101,10 @@ async function addRole() {
 
 // Function to add a new employee
 async function addEmployee() {
-  const roles = await Role.findAll({ attributes: [["id", "value"], ["title", "name"]] });
-  const managers = await Employee.findAll({ attributes: [["id", "value"], ["first_name", "name"], ["last_name", "lastName"]] });
+  const dbRoles = await Role.findAll({ attributes: [["id", "value"], ["title", "name"]] });
+  const dbManagers = await Employee.findAll({ attributes: [["id", "value"], ["first_name", "name"], ["last_name", "lastName"]] });
+  const managers = dbRoles.map(managers => managers.get({plain:true}))
+  const roles = dbRoles.map(role => role.get({plain:true}))
   const employee = await inquirer.prompt([
     { type: "input", message: "What is the first name of the new employee?", name: "first_name" },
     { type: "input", message: "What is the last name of the new employee?", name: "last_name" },
